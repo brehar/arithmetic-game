@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arithmetic Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="hidden success">
+		<p>Congratulations! You got the correct answer.</p>
+	</div>
+	<div class="hidden failure">
+		<p>Sorry, that's not right. The correct answer is <span id="correctAnswer"></span>.</p>
+	</div>
+	<div id="problem">
+		<p><span id="operand1"></span> <span id="operation"></span> <span id="operand2"></span> = <span id="answer"></span></p>
+	</div>
+	<table>
+		<tbody>
+			<tr>
+				<td><button id="7" class="num">7</button></td>
+				<td><button id="8" class="num">8</button></td>
+				<td><button id="9" class="num">9</button></td>
+				<td><button id="submit">=</button></td>
+			</tr>
+			<tr>
+				<td><button id="4" class="num">4</button></td>
+				<td><button id="5" class="num">5</button></td>
+				<td><button id="6" class="num">6</button></td>
+				<td><button id="clear">C</button></td>
+			</tr>
+			<tr>
+				<td><button id="1" class="num">1</button></td>
+				<td><button id="2" class="num">2</button></td>
+				<td><button id="3" class="num">3</button></td>
+				<td><button id="skip">Skip</button></td>
+			</tr>
+			<tr>
+				<td><button id="plusminus">±</button></td>
+				<td><button id="0" class="num">0</button></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	<div>
+		<p>Score: <span id="score">0</span></p>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
