@@ -97,11 +97,15 @@ function evaluateAnswer() {
 	if (inputNum === answer) {
 		document.querySelector('.success').classList.remove('hidden');
 		score++;
+		var audio = new Audio('win.wav');
+		audio.play();
 	} else {
 		document.querySelector('.failure').classList.remove('hidden');
 		console.log(answer);
 		document.getElementById('correctAnswer').textContent = answer;
 		score--;
+		var audio = new Audio('lose.wav');
+		audio.play();
 	}
 
 	document.getElementById('score').textContent = score;
